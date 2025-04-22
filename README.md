@@ -1,7 +1,6 @@
-# GameMath 
-
 This package has been adopted to compile on the iPadOS version of the Swift Playground app. This affects the current support of different features of the project, like package definition and unit tests. Though the code is only excluded from compilation on iPad it might cause issues when inculded in other projects.
 
+# GameMath 
 
 GameMath provides common types, related functions, and operators commonly used for interactive realtime simulations (games).
 You can use this library to create simple games, or use it as a cornerstone for a more complex engine like [GateEngine](https://github.com/STREGAsGate/GateEngine).
