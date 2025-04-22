@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -70,3 +71,4 @@ final class Position2Tests: XCTestCase {
         }
     }
 }
+#endif

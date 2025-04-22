@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -8,3 +9,4 @@ final class CircleTests: XCTestCase {
         XCTAssertEqual(circle.radius, 1)
     }
 }
+#endif

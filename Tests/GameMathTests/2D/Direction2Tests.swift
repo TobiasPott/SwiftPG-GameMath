@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -81,3 +82,4 @@ final class Direction2Tests: XCTestCase {
         XCTAssertEqual(direction, .right)
     }
 }
+#endif

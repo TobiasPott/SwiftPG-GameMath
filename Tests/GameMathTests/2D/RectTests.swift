@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -77,3 +78,4 @@ final class RectTests: XCTestCase {
         XCTAssertEqual(rect, expected)
     }
 }
+#endif

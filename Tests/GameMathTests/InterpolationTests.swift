@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -132,3 +133,4 @@ final class InterpolationTests: XCTestCase {
         }
     }
 }
+#endif

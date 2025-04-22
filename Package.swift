@@ -1,11 +1,12 @@
 // swift-tools-version:5.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-
+#if canImport(PackageDescription)
 import PackageDescription
 
-var libraryType: Product.Library.LibraryType? = nil
 #if os(Windows)
-libraryType = .dynamic
+var libraryType: Product.Library.LibraryType? = .dynamic
+#else
+var libraryType: Product.Library.LibraryType? = nil
 #endif
 
 var settings: [SwiftSetting]? {
@@ -35,12 +36,7 @@ let package = Package(
         .target(name: "GameMath", swiftSettings: settings),
         .testTarget(name: "GameMathTests",
                     dependencies: ["GameMath"]),
-        .testTarget(name: "GameMathSIMDTests",
-                    dependencies: ["GameMath"],
-                    swiftSettings: [
-                        .define("GameMathUseSIMD"),
-                        .define("GameMathUseLoopVectorization")
-                    ]),
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v4]
 )
+#endif

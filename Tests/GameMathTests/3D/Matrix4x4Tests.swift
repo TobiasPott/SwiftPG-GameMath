@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -147,3 +148,5 @@ final class Matrix4x4Tests: XCTestCase {
     }
     #endif
 }
+
+#endif

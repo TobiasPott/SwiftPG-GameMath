@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -50,3 +51,4 @@ final class AxisAlignedBoundingBox2DTests: XCTestCase {
         }
     }
 }
+#endif

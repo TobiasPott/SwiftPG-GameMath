@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -8,3 +9,4 @@ final class Size2Tests: XCTestCase {
         XCTAssertEqual(size.height, 1)
     }
 }
+#endif

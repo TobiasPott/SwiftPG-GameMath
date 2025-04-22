@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -17,3 +18,4 @@ final class BitStreamTests: XCTestCase {
         XCTAssertEqual(stream.readBits(1), 1)
     }
 }
+#endif

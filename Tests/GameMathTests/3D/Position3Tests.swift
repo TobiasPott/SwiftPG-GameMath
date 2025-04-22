@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -39,3 +40,4 @@ final class Position3Tests: XCTestCase {
         XCTAssertEqual(src.z, dst.z, accuracy: 0.0025)
     }
 }
+#endif

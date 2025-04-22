@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -22,3 +23,4 @@ final class Vector3Tests: XCTestCase {
         XCTAssertEqual(vec.z, 3)
     }
 }
+#endif

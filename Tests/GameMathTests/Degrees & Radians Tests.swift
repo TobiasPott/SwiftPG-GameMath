@@ -1,3 +1,4 @@
+#if canImport(XCTest)
 import XCTest
 @testable import GameMath
 
@@ -364,3 +365,4 @@ final class DegreesTests: XCTestCase {
         XCTAssertEqual(720°.shortestAngle(to: -720°), 0°)
     }
 }
+#endif
