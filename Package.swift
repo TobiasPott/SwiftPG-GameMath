@@ -26,7 +26,7 @@ var settings: [SwiftSetting]? {
     
     return array.isEmpty ? nil : array
 }
-
+/*
 let package = Package(
     name: "GameMath",
     products: [
@@ -38,5 +38,26 @@ let package = Package(
                     dependencies: ["GameMath"]),
     ],
     swiftLanguageVersions: [.v4]
+)
+*/
+let package = Package(
+    name: "GameMath",
+    platforms: [.macOS(.v10_15), .iOS(.v16)],
+    products: [
+        // Products define the executables and libraries a package produces, making them visible to other packages.
+        .library(
+            name: "GameMath",
+            targets: ["GameMath"]),
+    ],
+    targets: [
+        // Targets are the basic building blocks of a package, defining a module or a test suite.
+        // Targets can depend on other targets in this package and products from dependencies.
+        .target(
+            name: "GameMath"
+        )
+        //        .testTarget(
+        //            name: "GameMathTests",
+        //            dependencies: ["GameMath"]),
+    ]
 )
 #endif
